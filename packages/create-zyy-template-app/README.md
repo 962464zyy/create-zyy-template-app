@@ -8,6 +8,17 @@
 npx create-zyy-template-app my-app
 ```
 
+**安装一个确定的模板**
+
+```shell
+npx create-zyy-template-app my-app --template inside-tab
+```
+
+**现有模板参数**
+|参数| 描述|
+| :----: | :-----------------------------: |
+| inside-tab | 生成内嵌标签页的开发项目模板 |
+
 # 参考
 
 [create-react-app](https://github.com/facebook/create-react-app)

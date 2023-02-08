@@ -589,16 +589,6 @@ function install({ root, useYarn, dependencies, isOnline }) {
 }
 
 function downloadTemplate({ appPath, useYarn, appName, templateName }) {
-	console.log(
-		'appPath',
-		appPath,
-		'useYarn',
-		useYarn,
-		'appName',
-		appName,
-		'templateName',
-		templateName
-	);
 	if (!templateName) {
 		console.log('');
 		console.error(
@@ -616,7 +606,7 @@ function downloadTemplate({ appPath, useYarn, appName, templateName }) {
 	if (fs.existsSync(templateDir)) {
 		// 删除pkg,pkg.lock or yarn.lock
 		fs.removeSync(`${appPath}/package.json`);
-		fs.removeSync(`${appPath}package-lock.json`);
+		fs.removeSync(`${appPath}/package-lock.json`);
 		fs.removeSync(`${appPath}/yarn.lock`);
 		fs.copySync(templateDir, appPath);
 		fs.removeSync(`${appPath}/node_modules`);

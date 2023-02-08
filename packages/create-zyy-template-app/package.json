@@ -20,7 +20,7 @@
 	"author": "doubleYong <1781808347@qq.com>",
 	"license": "MIT",
 	"dependencies": {
-		"chalk": "^5.2.0",
+		"chalk": "^4.1.2",
 		"commander": "^10.0.0",
 		"cross-spawn": "^7.0.3",
 		"cta-template-mobile": "0.0.1",
