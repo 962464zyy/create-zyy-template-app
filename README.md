@@ -1,4 +1,4 @@
-# create-zyy-template-app ![npm](https://img.shields.io/npm/v/create-zyy-template-app)
+# create-zyy-template-app ![npm](https://img.shields.io/npm/v/create-zyy-template-app)![NPM](https://img.shields.io/npm/l/create-zyy-template-app)
 
 `create-zyy-template-app` 可用于快速生成开发项目模板
 
