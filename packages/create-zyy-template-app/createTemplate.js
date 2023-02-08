@@ -589,6 +589,16 @@ function install({ root, useYarn, dependencies, isOnline }) {
 }
 
 function downloadTemplate({ appPath, useYarn, appName, templateName }) {
+	console.log(
+		'appPath',
+		appPath,
+		'useYarn',
+		useYarn,
+		'appName',
+		appName,
+		'templateName',
+		templateName
+	);
 	if (!templateName) {
 		console.log('');
 		console.error(
