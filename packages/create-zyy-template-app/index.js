@@ -15,7 +15,6 @@ if (major < 14) {
 			'Create Template App requires Node 14 or higher. \n' +
 			'Please update your version of Node.'
 	);
-	// process.exitCode = 1
 	/**
 	 * exit 只执行同步操作，在调用后立即退出，若还有在事件循环中的事件则会被放弃
 	 * 参数不传是会取值exitCode 有参数是覆盖exitCode 默认值(success)0
