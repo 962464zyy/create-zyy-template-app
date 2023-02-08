@@ -1,12 +1,12 @@
 {
-  "name": "create-app",
-  "version": "1.0.0",
-  "description": "This is doubleYong's package",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "doubleYong <1781808347@qq.com>",
-  "license": ""
+	"name": "create-app",
+	"version": "1.0.0",
+	"description": "This is doubleYong's package",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [],
+	"author": "doubleYong <1781808347@qq.com>",
+	"license": "MIT"
 }

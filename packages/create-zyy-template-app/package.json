@@ -18,7 +18,7 @@
 	],
 	"keywords": [],
 	"author": "doubleYong <1781808347@qq.com>",
-	"license": "",
+	"license": "MIT",
 	"dependencies": {
 		"chalk": "^4.1.2",
 		"commander": "^9.5.0",
