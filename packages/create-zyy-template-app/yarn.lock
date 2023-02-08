@@ -85,6 +85,16 @@
     "shebang-command" "^2.0.0"
     "which" "^2.0.1"
 
+"cta-template-mobile@0.0.1":
+  "integrity" "sha512-dPsIaGiihh5r5c4hFZ3eYKWaWzzt1T1dj0Rw7X7np5d73VXNtPJnaLQKQZXDZR3vi/jGfcfV9toi1QBqr0SbIg=="
+  "resolved" "https://registry.npmjs.org/cta-template-mobile/-/cta-template-mobile-0.0.1.tgz"
+  "version" "0.0.1"
+
+"czta-template-inside-tab@0.0.1":
+  "integrity" "sha512-0DMxLExoF0iqRSXWSF0tptIWvUEaTeSH/khXILxf3J6XaPSDHqloN2ngG8RyUI1GG2yNDtMKuPrkYbpQKYb5rA=="
+  "resolved" "https://registry.npmjs.org/czta-template-inside-tab/-/czta-template-inside-tab-0.0.1.tgz"
+  "version" "0.0.1"
+
 "czta-template@1.0.1":
   "integrity" "sha512-/gpNiRx9YXWrvGrtcqgr0X32+I9cS0RTbGPLKZ8x6mLdWxymSL/VH7wAMvC2U55QdhbN/gjvIw7pmyObn589+w=="
   "resolved" "https://registry.npmjs.org/czta-template/-/czta-template-1.0.1.tgz"
@@ -103,6 +113,11 @@
   "version" "0.0.2"
   dependencies:
     "readable-stream" "~1.1.9"
+
+"envinfo@^7.8.1":
+  "integrity" "sha512-/o+BXHmB7ocbHEAs6F2EnG0ogybVVUdkRunTT2glZU9XAaGmhqskrvKwqXuDfNjEO0LZKWdejEEpnq8aM0tOaw=="
+  "resolved" "https://registry.npmjs.org/envinfo/-/envinfo-7.8.1.tgz"
+  "version" "7.8.1"
 
 "fs-extra@^11.1.0":
   "integrity" "sha512-0rcTq621PD5jM/e0a3EJoGC/1TC5ZBCERW82LQuwfGnCa1V8w7dpYH1yNu+SLb6E5dkeCBzKEyLGlFrnr+dUyw=="

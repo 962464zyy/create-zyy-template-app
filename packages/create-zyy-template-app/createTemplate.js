@@ -3,6 +3,7 @@
 const chalk = require('chalk');
 const commander = require('commander');
 const dns = require('dns');
+const envinfo = require('envinfo');
 const execSync = require('child_process').execSync;
 const fs = require('fs-extra');
 const hyperquest = require('hyperquest');
@@ -48,6 +49,34 @@ const init = () => {
 		})
 		.parse(process.argv);
 	const options = program.opts();
+	if (program.info) {
+		console.log(chalk.bold('\nEnvironment Info:'));
+		console.log(
+			`\n  current version of ${packageJson.name}: ${packageJson.version}`
+		);
+		console.log(`  running from ${__dirname}`);
+		return envinfo
+			.run(
+				{
+					System: ['OS', 'CPU'],
+					Binaries: ['Node', 'npm', 'Yarn'],
+					Browsers: [
+						'Chrome',
+						'Edge',
+						'Internet Explorer',
+						'Firefox',
+						'Safari',
+					],
+					npmPackages: ['react', 'react-dom', 'react-scripts'],
+					npmGlobalPackages: ['create-react-app'],
+				},
+				{
+					duplicates: true,
+					showNotFound: true,
+				}
+			)
+			.then(console.log);
+	}
 	if (typeof projectName === 'undefined') {
 		console.error('Please specify the project directory:');
 		console.log(
@@ -138,6 +167,8 @@ function checkAppName(appName) {
 			console.error(chalk.red(`   * ${error}`));
 		});
 		console.error(chalk.red(`\nPlease choose a different project name.`));
+		// 123
+		process.exit(1);
 	}
 	// TODO: there should be a single place that holds the dependencies
 	const dependencies = ['react', 'react-dom', 'react-scripts'].sort();
