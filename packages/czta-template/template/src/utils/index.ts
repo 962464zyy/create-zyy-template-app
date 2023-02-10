@@ -71,7 +71,7 @@ export const downloadIamge = (imgSrc: string, name?: string) => {
 		const url = canvas.toDataURL('image/png') // 得到图片的base64编码数据
 		const a = document.createElement('a') // 生成一个a元素
 		const event = new MouseEvent('click') // 创建一个单击事件
-		a.download = name || '新榜下载'
+		a.download = name || '下载'
 		a.href = url // 将生成的URL设置为a.href属性
 		a.dispatchEvent(event) // 触发a的单击事件
 	}

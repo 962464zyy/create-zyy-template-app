@@ -18,7 +18,7 @@ export const layoutSettings = {
 		autoClose: false
 	},
 	logo: getEnv() === 'development' ? '/logo.svg' : '../logo.svg',
-	webTitle: '海汇kol'
+	webTitle: 'zyy'
 } as const
 
 /** 创建一个全局的context */
